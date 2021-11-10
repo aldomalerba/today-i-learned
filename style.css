@@ -1,0 +1,52 @@
+
+:root {
+    --main-color: teal;
+    --scale-list-item: 1.15
+  }
+    
+  
+body{
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+}
+  
+  .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .title{
+      color: var(--main-color)
+  }
+  
+  .list{
+      padding: 0;
+      list-style-type: none;
+  }
+  
+  .list-item{
+      list-style: none;
+      border-bottom: var(--main-color) solid 1px;
+      padding: 1em;
+      margin: 1rem;
+      width: 25vw;
+   }
+  
+  .list-item:hover{
+     border: teal solid 1px;
+     box-shadow: 5px 10px var(--main-color);
+     cursor: pointer;
+     transform: scale(var(--scale-list-item))
+  }
+  
+  .list-item:active {
+      transform: translateX(4px) translateY(8px) scale(var(--scale-list-item));
+      box-shadow: 1px 2px var(--main-color);
+  }
+  
+  .list-item-title{
+      font-weight: bold;
+      color: var(--main-color);
+  }
+  
